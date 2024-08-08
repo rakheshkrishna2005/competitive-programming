@@ -11,7 +11,7 @@ class Solution:
         if x < 0:
             rev = -rev
 
-        if x < -2**31 or x > 2**31 -1:
-             return 0
+        if (rev < -2**31) or (rev > 2**31-1):
+            return 0
 
         return rev
